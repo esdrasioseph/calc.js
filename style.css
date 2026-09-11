@@ -125,3 +125,9 @@ h1 {
 .error {
     color: var(--error-color) !important;
 }
+
+@media (max-width: 480px) {
+    .flex-align-center, #input, #keys, #resultInput {
+        width: 90%;
+    }
+}
