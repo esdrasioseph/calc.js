@@ -9,49 +9,53 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <main data-theme="dark">
-        <header class="flex-align-center">
-            <div class="headerMain">
-                <h1>Calc.js</h1>
-                <button id="themeSwitcher">Swicth Theme Dark/Light</button>
+        <div class="calc-body">
+            <header class="flex-align-center">
+                <div class="headerMain">
+                    <h1>Calc.js</h1>
+                    <button id="themeSwitcher">Swicth Theme Dark/Light</button>
+                </div>
+
+                <input type="text" id="input">
+            </header>
+
+            <div id="keys">
+                <button id="clear">C</button>
+                <button class="charKey" data-value=" ( ">(</button>
+                <button class="charKey" data-value=" ) ">)</button>
+                <button class="charKey" data-value=" / ">/</button>
+                <button class="charKey" data-value="7">7</button>
+                <button class="charKey" data-value="8">8</button>
+                <button class="charKey" data-value="9">9</button>
+                <button class="charKey" data-value=" * ">*</button>
+                <button class="charKey" data-value="4">4</button>
+                <button class="charKey" data-value="5">5</button>
+                <button class="charKey" data-value="6">6</button>
+                <button class="charKey" data-value=" - ">-</button>
+                <button class="charKey" data-value="1">1</button>
+                <button class="charKey" data-value="2">2</button>
+                <button class="charKey" data-value="3">3</button>
+                <button class="charKey" data-value=" + ">+</button>
+                <button class="charKey" data-value="0">0</button>
+                <button class="charKey" data-value=".">.</button>
+                <button class="charKey" data-value=" % ">mod</button>
+                <button id="equal">=</button>
             </div>
 
-            <input type="text" id="input">
-        </header>
-
-        <div id="keys">
-            <button id="clear">C</button>
-            <button class="charKey" data-value=" ( ">(</button>
-            <button class="charKey" data-value=" ) ">)</button>
-            <button class="charKey" data-value=" / ">/</button>
-            <button class="charKey" data-value="7">7</button>
-            <button class="charKey" data-value="8">8</button>
-            <button class="charKey" data-value="9">9</button>
-            <button class="charKey" data-value=" * ">*</button>
-            <button class="charKey" data-value="4">4</button>
-            <button class="charKey" data-value="5">5</button>
-            <button class="charKey" data-value="6">6</button>
-            <button class="charKey" data-value=" - ">-</button>
-            <button class="charKey" data-value="1">1</button>
-            <button class="charKey" data-value="2">2</button>
-            <button class="charKey" data-value="3">3</button>
-            <button class="charKey" data-value=" + ">+</button>
-            <button class="charKey" data-value="0">0</button>
-            <button class="charKey" data-value=".">.</button>
-            <button class="charKey" data-value=" % ">mod</button>
-            <button id="equal">=</button>
+            <section class="flex-align-center">
+                <button id="copyToClipboard">Copy</button>
+                <input type="text" id="resultInput" disabled>
+            </section>
         </div>
-
-        <section class="flex-align-center">
-            <button id="copyToClipboard">Copy</button>
-            <input type="text" id="resultInput" disabled>
-        </section>
     </main>
 
     <script src="./script.js"></script>

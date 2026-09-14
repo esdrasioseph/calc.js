@@ -7,7 +7,8 @@
 
 :root {
     --background-color: rgb(33,37,40);
-    --green-color: rgb(77,255,146);
+    --body-color:  rgb(0, 0, 1);
+    --orange-color: rgb(243,126,72);
     --text-color: rgb(220, 220, 220);
     --hover-color: rgb(42, 46, 49);
     --error-color: rgb(240,30,30);
@@ -19,6 +20,14 @@ body {
 
 main {
     margin-top: 2.2rem;
+}
+
+.calc-body {
+    background-color: var(--body-color);
+    width: 35rem;
+    padding: 1.2rem;
+    margin: 0 auto;
+    border-radius: 0.8rem;
 }
 
 .flex-align-center {
@@ -81,7 +90,7 @@ h1 {
     font-size: larger;
     border-radius: 0.2rem;
     border: 0;
-    background-color: var(--green-color);
+    background-color: var(--orange-color);
     font-weight: 500;
 }
 
@@ -127,7 +136,7 @@ h1 {
 }
 
 @media (max-width: 480px) {
-    .flex-align-center, #input, #keys, #resultInput {
+    .flex-align-center, .calc-body, #input, #keys, #resultInput {
         width: 90%;
     }
 }
